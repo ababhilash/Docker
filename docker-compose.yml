@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  web:
+    image: aarthur6541/demo01
+    build: .
+    ports:
+      - "8000:8000"
+  redis:
+    image: redis:alpine
